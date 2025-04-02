@@ -20,8 +20,8 @@ app.post('/jobs', async (req, res) => {
   res.send(job);
 });
 
-app.get('/jobs', async (req, res) => {
-  res.send(await Job.find());
+app.get("/", (req, res) => {
+  res.send("server is running");
 });
 
 const PORT = process.env.PORT || 5000;
